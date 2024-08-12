@@ -14,7 +14,7 @@
       },
       {
         "id": "3",
-        "src": "./img/",
+        "src": "./img/express.svg",
         "title": "Express",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
       },
@@ -62,7 +62,7 @@
       },
       {
         "id": "11",
-        "src": "./img/feather-pen-1.png",
+        "src": "./img/c++.svg",
         "title": "C++",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
       },
@@ -80,7 +80,7 @@
       },
       {
         "id": "14",
-        "src": "./img/feather-pen-1.png",
+        "src": "./img/postman.svg",
         "title": "Postman",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
       },

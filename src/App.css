@@ -660,6 +660,9 @@ h2{
       flex-direction: column;
       
     }
+    .skills--section--container{
+      grid-template-columns: repeat(5fr);
+    }
     .skills--section,
     .portfolio--container,
     .hero--section--content,
