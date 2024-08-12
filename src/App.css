@@ -649,7 +649,7 @@ h2{
     .footer--content {
       text-align: center;
     }
-    .skills--section--container,
+    /* .skills--section--container, */
     .about--section,
     .portfolio--section--container,
     .portfolio--container-box,
@@ -661,7 +661,12 @@ h2{
       
     }
     .skills--section--container{
-      grid-template-columns: repeat(5fr);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .skills--section--title {
+      font-size: 18px;
+      line-height: 20px;
     }
     .skills--section,
     .portfolio--container,
