@@ -35,9 +35,9 @@ export default function Navbar() {
 
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
-      <div>
+      <div className="nav_logo">
         {/* <img src="./img/logo.svg" alt="Logoipsum" /> */}
-        <h2>Soumya's Portfolio</h2>
+        <h2 >Soumya's Portfolio</h2>
       </div>
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}
