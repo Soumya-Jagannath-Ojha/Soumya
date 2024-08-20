@@ -219,6 +219,9 @@ h2 {
   /* gap: 21.33px; */
   gap: 2px;
 }
+.hero--section--content p {
+  line-height: 45px;
+}
 
 .hero--section--content--box > button {
   margin-top: 21.333px;
@@ -248,10 +251,13 @@ h2 {
 
   .MyImg {
     width: 300px;
-    /* height: 250px; */
+    height: 300px;
     border-radius: 12px;
     margin-left: 60px;
   }
+}
+.section--title {
+  font-size: 32px;
 }
 
 .hero--section--img > img {
@@ -271,7 +277,7 @@ h2 {
   /* padding: 49.33px 25.33px; */
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   gap: 106.667px;
 }
 .skills--section--heading {
@@ -318,9 +324,11 @@ h2 {
 .skills--section--card--content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   gap: 32px;
   align-self: stretch;
+  /* text-align: center; */
+  align-items: center;
 }
 .skills--section--title {
   color: var(--heading-color);
@@ -474,7 +482,7 @@ h2 {
 /* Contact starts here */
 .contact--section {
   display: flex;
-  padding: 150px 85px;
+  padding: 70px 85px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -484,7 +492,7 @@ h2 {
 .contact--form--container {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: repeat(5, auto);
+  grid-template-rows: repeat(3, auto);
   width: 40%;
   row-gap: 32px;
 }
@@ -659,7 +667,7 @@ input[type="checkbox"] {
   }
   .skills--section--container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
   .skills--section--title {
     font-size: 18px;
@@ -679,8 +687,9 @@ input[type="checkbox"] {
   .contact--section,
   .footer--container {
     gap: 20px;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    /* padding-top: 70px;
+    padding-bottom: 70px; */
+    padding: 60px;
   }
   .about--section {
     gap: 20px;
@@ -688,7 +697,7 @@ input[type="checkbox"] {
     padding-bottom: 0;
   }
   .testimonial--section--card {
-    padding: 25px;
+    padding: 30px;
   }
   .hero--section--title,
   .skills--section--heading,
@@ -739,7 +748,10 @@ input[type="checkbox"] {
   transition: all ease-in-out 0.2s;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
+  .section--title {
+    font-size: 14px;
+  }
   .hero--section-description {
     font-size: 16px;
     text-align: start;
@@ -758,11 +770,57 @@ input[type="checkbox"] {
     align-items: flex-start;
     gap: 41px;
   }
+  .portfolio--section--card--content {
+    padding: 12px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
   /* display: grid;
     padding: 133.3px 85.3px;
     align-items: center;
     gap: 114.6px;
     grid-template-columns: repeat(2, 1fr); */
+  .hero--section--img {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .MyImg {
+    height: 200px;
+    width: 200px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .skills--section--container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero--section--title--color {
+    font-size: 22px;
+  }
+  .hero--section--content p {
+    line-height: 31px;
+    font-size: 18px;
+  }
+
+  .skills--section--img img {
+    height: 26px;
+    width: 26px;
+  }
+  .btn-github {
+    gap: 8px;
+  }
+  .contact--section {
+    padding: 25px;
+  }
+  .testimonial--section--card {
+    padding: 14px;
+    gap: 22px;
+  }
+  .footer--container{
+    padding: 30px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -817,13 +875,13 @@ input[type="checkbox"] {
   .nav_logo h2 {
     font-size: 18px;
   }
-  
-  .sections--heading{
+
+  .sections--heading {
     font-size: 24px;
   }
   .testimonial--section {
     /* display: flex; */
-    padding: 60px 24px;
+    padding: 120px;
     /* flex-direction: column;
     align-items: flex-start; */
     /* gap: 80px; */

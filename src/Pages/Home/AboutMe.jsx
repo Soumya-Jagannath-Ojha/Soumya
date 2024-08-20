@@ -13,9 +13,9 @@ export default function AboutMe() {
             technology and build scalable applications.
           </p>
           <p className="hero--section-description">
-            A little bit about my education, I am a 4th year student of DRIEMS
+            A little bit about my education, I am a 4th year student at DRIEMS
             University cuttack , Odisha, pursuing my B.Tech in Computer Science
-            and my current cumulative grade point average is 9.05(till 5th
+            and my current cumulative grade point average is 9.21(till 5th
             semester)
           </p>
         </div>
