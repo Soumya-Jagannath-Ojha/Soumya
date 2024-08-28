@@ -1,26 +1,42 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { motion } from "framer-motion";
 export default function HeroSection() {
   let [text] = useTypewriter({
-    words: ["Frontend Developer", "Backend Developer", "FullStack Developer"],
+    words: ["Soumya Jagannath Ojha","Frontend Developer", "Backend Developer", "FullStack Developer"],
     loop: {},
     typeSpeed: 100,
     deleteSpeed: 40,
   });
 
+  const textVariants = {
+    initial: {
+      x: -500,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.9,
+        staggerChildren: 0.1
+      }
+    }
+  }
+
   return (
     <section id="heroSection" className="hero--section">
-      <div className="hero--section--content--box">
-        <div className="hero--section--content">
-          <p className="section--title">Hey, I'm Soumya Jagannath Ojha</p>
+      <motion.div className="hero--section--content--box" variants={textVariants} initial="initial" animate="animate">
+        <motion.div className="hero--section--content" variants={textVariants}>
+          <motion.p className="section--title" variants={textVariants}>Hello, I'm</motion.p>
 
-          <span className="hero--section--title">
-            <span className="hero--section--title--color">
+          <motion.span className="hero--section--title" variants={textVariants}>
+            <motion.span className="hero--section--title--color" variants={textVariants}>
               {text}
               <Cursor />
-            </span>{" "}
-            <br />
+            </motion.span>{" "}
+            <motion.br variants={textVariants} />
             {/* Developer */}
-          </span>
+          </motion.span>
 
           {/* <p className="hero--section--description">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic,
@@ -29,14 +45,14 @@ export default function HeroSection() {
             <br /> 
             Lorem ipsum dolor sit amet  adipisicing elit. In aut asperiores quibusdam?
           </p> */}
-        </div>
-        <div className="down">
-          <a href="https://github.com/Soumya-Jagannath-Ojha" target="_main">
-            <button className="btn btn-primary">GitHub</button>
-          </a>
+        </motion.div>
+        <motion.div className="down" variants={textVariants}>
+          <motion.a variants={textVariants} href="https://github.com/Soumya-Jagannath-Ojha" target="_main">
+            <motion.button variants={textVariants} className="btn btn-primary">GitHub</motion.button>
+          </motion.a>
           {/* <button className="btn btn-primary">Resume</button> */}
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       <div className="hero--section--img">
         {/* <img src="./img/hero_img.png" alt="logo" /> */}

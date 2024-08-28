@@ -205,6 +205,7 @@ h2 {
   justify-content: space-between;
   gap: 32px;
   background-color: var(--bg-shade);
+  /* height: 40vh; */
 }
 .hero--section--content--box {
   display: flex;
@@ -273,12 +274,14 @@ h2 {
 /* Skills Section Style */
 .skills--section {
   display: flex;
-  padding: 149.33px 85.33px;
-  /* padding: 49.33px 25.33px; */
+  /* padding: 149.33px 85.33px; */
+
+  padding: 120px 65.33px;
   flex-direction: column;
   justify-content: center;
   /* align-items: flex-start; */
-  gap: 106.667px;
+  /* gap: 106.667px; */
+  gap: 30px;
 }
 .skills--section--heading {
   color: var(--heading-color);

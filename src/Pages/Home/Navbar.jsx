@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 // import { Link } from "react-router-dom";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 export default function Navbar() {
   const [navActive, setNavActive] = useState(false);
@@ -37,7 +38,13 @@ export default function Navbar() {
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div className="nav_logo">
         {/* <img src="./img/logo.svg" alt="Logoipsum" /> */}
-        <h2 >Soumya's Portfolio</h2>
+        <motion.h2
+        initial={{opacity:0, scale:0.5}}
+        animate={{opacity:1, scale:1}}
+        transition={{duration:0.9}}
+        >
+          Soumya's Portfolio
+          </motion.h2>
       </div>
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}
