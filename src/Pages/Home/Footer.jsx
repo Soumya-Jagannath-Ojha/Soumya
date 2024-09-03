@@ -1,12 +1,33 @@
 import { Link } from "react-scroll";
+import { animate, motion } from "framer-motion";
 
-export default function Footer(){
-    return(
-        <footer className="footer--container">
-      <div className="footer--link--container">
+const variants = {
+  initial: {
+    opacity: 0,
+    scale: 0.5
+  },
+  animate:{
+    opacity: 1,
+    scale: 1,
+    transition:{
+      duration: 0.9
+    }
+  }
+}
+
+
+export default function Footer() {
+  return (
+    <motion.footer className="footer--container" initial="initial"
+    whileInView="animate">
+      <div className="footer--link--container" variants={variants}>
         <div>
           {/* <img src="./img/logo.svg" alt="Logoipsum" /> */}
-          <h2>Soumya</h2>
+          <motion.h2
+            variants={variants}
+          >
+            Soumya
+          </motion.h2>
         </div>
         <div className="footer--items">
           <ul>
@@ -124,7 +145,7 @@ export default function Footer(){
                 </svg>
               </a>
             </li> */}
-            <li>
+            <motion.li variants={variants}>
               <a
                 href="https://www.twitter.com/"
                 className="navbar--content"
@@ -144,13 +165,14 @@ export default function Footer(){
                   />
                 </svg>
               </a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={variants}>
               <a
                 href="https://www.linkedin.com/"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
+                
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -158,6 +180,7 @@ export default function Footer(){
                   height="32"
                   viewBox="0 0 33 33"
                   fill="none"
+                  
                 >
                   <path
                     fillRule="evenodd"
@@ -167,7 +190,7 @@ export default function Footer(){
                   />
                 </svg>
               </a>
-            </li>
+            </motion.li>
           </ul>
         </div>
       </div>
@@ -218,6 +241,6 @@ export default function Footer(){
           </ul>
         </div>
       </div>
-    </footer>
-    )
+    </motion.footer>
+  );
 }

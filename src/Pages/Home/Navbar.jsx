@@ -39,12 +39,12 @@ export default function Navbar() {
       <div className="nav_logo">
         {/* <img src="./img/logo.svg" alt="Logoipsum" /> */}
         <motion.h2
-        initial={{opacity:0, scale:0.5}}
-        animate={{opacity:1, scale:1}}
-        transition={{duration:0.9}}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.9 }}
         >
           Soumya's Portfolio
-          </motion.h2>
+        </motion.h2>
       </div>
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}
@@ -78,10 +78,10 @@ export default function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="MyPortfolio"
+              to="mySkills"
               className="navbar--content"
             >
-              Portfolio
+              Skills
             </Link>
           </li>
           <li>
@@ -106,10 +106,10 @@ export default function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="testimonial"
+              to="MyPortfolio"
               className="navbar--content"
             >
-              Testimonials
+              Projects
             </Link>
           </li>
         </ul>

@@ -23,7 +23,7 @@ export default function MyPortfolio() {
       <motion.div className="portfolio--container-box">
         <motion.div className="portfolio--container">
           <motion.p className="sub--title">Recent Projects</motion.p>
-          <motion.h2 className="section--heading">My Portfolio</motion.h2>
+          <motion.h2 className="section--heading">My Projects</motion.h2>
         </motion.div>
         <motion.div>
           <motion.a
