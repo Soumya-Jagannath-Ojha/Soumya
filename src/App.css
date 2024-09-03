@@ -432,6 +432,8 @@ h2 {
 }
 /* Portfolio Ends */
 
+
+
 /* Testimonial */
 .testimonial--section {
   display: flex;
@@ -821,7 +823,7 @@ input[type="checkbox"] {
     padding: 14px;
     gap: 22px;
   }
-  .footer--container{
+  .footer--container {
     padding: 30px;
   }
 }
