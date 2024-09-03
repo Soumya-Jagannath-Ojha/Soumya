@@ -1,37 +1,6 @@
 import data from "../../data/index.json";
 
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import { useRef } from "react";
-const items = [
-  {
-    id: 1,
-    title: "WeatherApp",
-    img: "./img/weather.png",
-    desc: "Design a Weather App utilizes the Open Weather API for real-time weather updates. Users access detailed forecasts for their location or any global city.",
-    url: "https://www.linkedin.com/posts/soumya-jagannath-ojha_reactjs-api-weatherapp-activity-7170009525423386624-oZh6/?utm_source=share&utm_medium=member_desktop",
-  },
-  {
-    id: 2,
-    title: "WanderLust",
-    img: "./img/wanderlust.png",
-    desc: " Designed and developed an online marketplace website that connects people who want to rent out their property with people who are looking for accommodations, typically for short stays.",
-    url: "https://fullstack-project-kztl.onrender.com/listings",
-  },
-  {
-    id: 3,
-    title: "TodoList",
-    img: "./img/Todo.png",
-    desc: "A simple and beautiful To-Do application built with ReactJS, Redux, and Vite. This application allows users to add, view, edit, delete, and mark tasks as done. The state is managed using Redux.",
-    url: "https://soumyatodolist.netlify.app/",
-  },
-  {
-    id: 4,
-    title: "Recipe Website",
-    img: "./project/Foodrecipe.png",
-    desc: "Discover the delightful and mouthwatering food recipes that will tantalize your taste buds and impress your guests.",
-    url: "https://makedeliciousfood.netlify.app/",
-  },
-];
+import { motion } from "framer-motion";
 
 const variants = {
   initial: {
@@ -48,7 +17,6 @@ const variants = {
   },
 };
 
-
 export default function MyPortfolio() {
   return (
     <section className="portfolio--section" id="MyPortfolio">
@@ -58,7 +26,10 @@ export default function MyPortfolio() {
           <motion.h2 className="section--heading">My Portfolio</motion.h2>
         </motion.div>
         <motion.div>
-          <motion.a href="https://github.com/Soumya-Jagannath-Ojha" target="_main">
+          <motion.a
+            href="https://github.com/Soumya-Jagannath-Ojha"
+            target="_main"
+          >
             <motion.button className="btn btn-github">
               <motion.svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -79,16 +50,38 @@ export default function MyPortfolio() {
           </motion.a>
         </motion.div>
       </motion.div>
-      <motion.div className="portfolio--section--container" initial="initial" whileInView="animate">
+      <motion.div
+        className="portfolio--section--container"
+        initial="initial"
+        whileInView="animate"
+      >
         {data?.portfolio?.map((item, index) => (
-          <motion.div key={index} className="portfolio--section--card" variants={variants}>
+          <motion.div
+            key={index}
+            className="portfolio--section--card"
+            variants={variants}
+          >
             <motion.div className="portfolio--section--img" variants={variants}>
-              <motion.img src={item.src} alt="Placeholder" variants={variants} />
+              <motion.img
+                src={item.src}
+                alt="Placeholder"
+                variants={variants}
+              />
             </motion.div>
-            <motion.div className="portfolio--section--card--content" variants={variants}>
+            <motion.div
+              className="portfolio--section--card--content"
+              variants={variants}
+            >
               <motion.div>
-                <motion.h3 className="portfolio--section--title" variants={variants}>{item.title}</motion.h3>
-                <motion.p className="text-md" variants={variants}>{item.description}</motion.p>
+                <motion.h3
+                  className="portfolio--section--title"
+                  variants={variants}
+                >
+                  {item.title}
+                </motion.h3>
+                <motion.p className="text-md" variants={variants}>
+                  {item.description}
+                </motion.p>
               </motion.div>
               <motion.a
                 className="text-sm portfolio--link"

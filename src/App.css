@@ -770,7 +770,7 @@ input[type="checkbox"] {
   }
   .portfolio--section {
     display: flex;
-    padding: 89px 85px 0 85px;
+    padding: 89px 25px 0 25px;
     flex-direction: column;
     align-items: flex-start;
     gap: 41px;
