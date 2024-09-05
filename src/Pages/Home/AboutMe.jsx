@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const variants = {
   initial: {
-    x: -500,
+    x: -300,
     opacity: 0,
   },
   animate: {
@@ -20,7 +20,7 @@ export default function AboutMe() {
     <motion.section
       id="AboutMe"
       className="about--section"
-      variants={variants}
+      // variants={variants}
       initial="initial"
       whileInView="animate"
     >
