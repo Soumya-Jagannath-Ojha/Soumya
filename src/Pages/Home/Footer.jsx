@@ -54,7 +54,7 @@ export default function Footer() {
                 to="MyPortfolio"
                 className="text-md"
               >
-                Portfolio
+                Projects
               </Link>
             </li>
             <li>
