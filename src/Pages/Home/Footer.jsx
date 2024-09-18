@@ -64,6 +64,19 @@ export default function Footer() {
                 smooth={true}
                 offset={-70}
                 duration={500}
+                to="mySkills"
+                className="text-md"
+              >
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="navbar--active-content"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
                 to="AboutMe"
                 className="text-md"
               >
@@ -83,19 +96,7 @@ export default function Footer() {
                 Contact
               </Link>
             </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="testimonial"
-                className="text-md"
-              >
-                Testimonials
-              </Link>
-            </li>
+            
           </ul>
         </div>
         <div className="footer--social--icon">
