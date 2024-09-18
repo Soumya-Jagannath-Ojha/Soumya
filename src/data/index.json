@@ -165,7 +165,7 @@
         "title": "WeatherApp",
         "img": "./img/weather.png",
         "desc": "Design a Weather App utilizes the Open Weather API for real-time weather updates. Users access detailed forecasts for their location or any global city.",
-        "url": "https://www.linkedin.com/posts/soumya-jagannath-ojha_reactjs-api-weatherapp-activity-7170009525423386624-oZh6/?utm_source=share&utm_medium=member_desktop"
+        "url": "https://sjoweather.netlify.app/"
       },
       {
         "id": 2,
