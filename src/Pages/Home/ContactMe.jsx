@@ -40,7 +40,7 @@ export default function ContactMe() {
             <input
               type="text"
               className="contact--input text-md"
-              name="name"
+              name="first-name"
               id="first-name"
               required
             />
