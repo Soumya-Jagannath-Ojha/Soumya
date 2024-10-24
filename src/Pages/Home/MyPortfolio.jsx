@@ -72,7 +72,7 @@ export default function MyPortfolio() {
               className="portfolio--section--card--content"
               variants={variants}
             >
-              <motion.div>
+              <motion.div className="text-container">
                 <motion.h3
                   className="portfolio--section--title"
                   variants={variants}
