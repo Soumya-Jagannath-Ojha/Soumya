@@ -131,6 +131,13 @@
         "title": "Todo List",
         "description": "A simple and beautiful To-Do application built with ReactJS, Redux, and Vite. This application allows users to add, view, edit, delete, and mark tasks as done. The state is managed using Redux.",
         "link": "https://soumyatodolist.netlify.app/"
+      },
+      {
+        "id": "4",
+        "src": "./img/Todo.png",
+        "title": "Recipe WebApp",
+        "description": "A simple and beautiful To-Do application built with ReactJS, Redux, and Vite. This application allows users to add, view, edit, delete, and mark tasks as done. The state is managed using Redux.",
+        "link": "https://makedeliciousfood.netlify.app/"
       }
     ],
     "testimonial": [
