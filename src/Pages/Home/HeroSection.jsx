@@ -27,7 +27,8 @@ export default function HeroSection() {
     <section id="heroSection" className="hero--section">
       <motion.div className="hero--section--content--box" variants={textVariants} initial="initial" animate="animate">
         <motion.div className="hero--section--content" variants={textVariants}>
-          <motion.p className="section--title" variants={textVariants}>Hello, I'm</motion.p>
+          <motion.p className="section--title" variants={textVariants}>Hi! My name is <span id="name">Soumya</span></motion.p>
+          <motion.p className="section--title" variants={textVariants}>and I am a passionate</motion.p>
 
           <motion.span className="hero--section--title" variants={textVariants}>
             <motion.span className="hero--section--title--color" variants={textVariants}>

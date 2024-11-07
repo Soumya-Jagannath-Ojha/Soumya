@@ -137,6 +137,10 @@ h2 {
   font-weight: 400;
   line-height: 21px;
 }
+#name{
+  color: var(--primary);
+  padding-left: 12px;
+}
 
 /* Section Titles */
 /* Skills & About Me */
@@ -254,7 +258,8 @@ h2 {
   width: 400px;
   height: 400px;
   border-radius: 12px;
-  margin-left: 60px;
+  /* margin-left: 60px; */
+  margin: auto;
   justify-content: space-evenly;
 }
 .section--title {
@@ -357,9 +362,21 @@ h2 {
   gap: 114.6px;
   grid-template-columns: repeat(2, 1fr);
 }
-.about--section--img > img {
-  width: 100%;
+.about--section--img{
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
   height: 100%;
+  border-radius: 15px;
+}
+.me{
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 25px;
+}
+.about--section--img > img {
+  width: 80%;
+  height: 80%;
 }
 /* About Us Ends */
 
