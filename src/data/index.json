@@ -113,10 +113,10 @@
     "portfolio": [
       {
         "id": "1",
-        "src": "./img/wanderlust.png",
-        "title": "WanderLust",
-        "description": "Designed and developed an online marketplace website that connects people who want to rent out their property with people who are looking for accommodations, typically for short stays.",
-        "link": "https://fullstack-project-kztl.onrender.com/listings"
+        "src": "./img/Note.png",
+        "title": "QuickNote",
+        "description": "In this web app that allows users to create, organize, and manage notes efficiently.",
+        "link": "https://quicknotes43.netlify.app/"
       },
       {
         "id": "2",
@@ -176,10 +176,10 @@
       },
       {
         "id": 2,
-        "title": "WanderLust",
-        "img": "./img/wanderlust.png",
-        "desc": " Designed and developed an online marketplace website that connects people who want to rent out their property with people who are looking for accommodations, typically for short stays.",
-        "url": "https://fullstack-project-kztl.onrender.com/listings"
+        "title": "QuickNote",
+        "img": "./img/Note.png",
+        "desc": " In this web app that allows users to create, organize, and manage notes efficiently.",
+        "url": "https://quicknotes43.netlify.app/"
       },
       {
         "id": 3,
