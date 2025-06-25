@@ -2,7 +2,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 export default function HeroSection() {
   let [text] = useTypewriter({
-    words: ["Soumya Jagannath Ojha","Frontend Developer", "Backend Developer", "FullStack Developer"],
+    words: ["Frontend Developer", "Backend Developer", "FullStack Developer"],
     loop: {},
     typeSpeed: 100,
     deleteSpeed: 40,

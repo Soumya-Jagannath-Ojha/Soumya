@@ -707,8 +707,7 @@ input[type="checkbox"] {
   .portfolio--section--container,
   .portfolio--container-box,
   .footer--link--container,
-  .footer--items > ul,
-  .footer--content--container {
+  .footer--items > ul {
     display: flex;
     flex-direction: column;
   }
@@ -846,11 +845,11 @@ input[type="checkbox"] {
   }
 
   .hero--section--title--color {
-    font-size: 22px;
+    font-size: 20px;
   }
   .hero--section--content p {
     line-height: 31px;
-    font-size: 18px;
+    font-size: 17px;
   }
   .skills--section--container {
     display: grid;
@@ -872,6 +871,23 @@ input[type="checkbox"] {
   }
   .footer--container {
     padding: 30px;
+  }
+  .footer--content--container {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer--link--container{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer--items > ul {
+    gap: 20px;
+  }
+  .hero--section-description{
+    text-align: center;
+  }
+  .btn{
+    padding: 10px 20px;
   }
 }
 
