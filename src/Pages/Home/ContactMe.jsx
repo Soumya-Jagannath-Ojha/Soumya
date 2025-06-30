@@ -38,13 +38,13 @@ export default function ContactMe() {
       </div>
       <form className="contact--form--container" onSubmit={sendEmail} ref={formRef}>
         <div className="container">
-          <label htmlFor="first-name" className="contact--label">
+          <label htmlFor="name" className="contact--label">
             <span className="text-md">Name</span>
             <input
               type="text"
               className="contact--input text-md"
-              name="first-name"
-              id="first-name"
+              name="name"
+              id="name"
               required
             />
           </label>
