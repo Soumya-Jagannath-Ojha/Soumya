@@ -35,6 +35,8 @@ export default function ContactMe() {
       <div>
         <p className="sub--title">Get In Touch</p>
         <h2>Contact Me</h2>
+        {error && "Error"}
+          {success && "Success"}
       </div>
       <form className="contact--form--container" onSubmit={sendEmail} ref={formRef}>
         <div className="container">
@@ -105,8 +107,7 @@ export default function ContactMe() {
         <div>
           <button className="btn btn-primary contact--form--btn">Submit</button>
         </div>
-        {error && "Error"}
-          {success && "Success"}
+        
       </form>
     </section>
   );
