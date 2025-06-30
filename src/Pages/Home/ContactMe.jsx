@@ -18,9 +18,12 @@ export default function ContactMe() {
       .then(
         () => {
           setSuccess(true);
+          setError(false);
+          formRef.current.reset();
         },
         (error) => {
           setError(true);
+          setSuccess(false)
         }
       );
   };
