@@ -770,6 +770,7 @@ input[type="checkbox"] {
   .divider {
     margin: 20px;
   }
+  
 }
 
 /* Hamburger menu  */
@@ -996,6 +997,19 @@ input[type="checkbox"] {
   .portfolio--section--card {
     flex: 1 0 45%; /* Adjusts card width to balance content layout */
     margin: 20px; /* Adds spacing between cards */
+  }
+}
+
+@media (min-width: 1500px) {
+  .portfolio--section--card {
+    flex: 1 0 30%;
+    max-width: 30%;
+    margin: 20px;
+  }
+
+  .portfolio--section--container {
+    padding: 0 60px;
+    justify-content: space-between; /* or center */
   }
 }
 
